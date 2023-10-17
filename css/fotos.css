@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-family: 'Kdam Thmor Pró, sans-serif';
+  margin-top: 35px;
+
+
+}
+
+header {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+nav {
+  width: 60%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+li {
+  list-style: none;
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 19px;
+  transition: 0.5s;
+  font-family: 'Kdam Thmor Pró, sans-serif';
+}
+
+li:hover {
+  color: rgba(255, 0, 0, 0.692);
+  animation: translatY 0.8s infinite alternate;
+}
+
+@keyframes translatY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+}
+
+.actor-cards-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.cards-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
+  column-gap: 40px;
+
+}
+
+.card {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 20px 20px;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Kdam Thmor Pró, sans-serif;
+
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.banner1 {
+  background-image: url(https://f.i.uol.com.br/fotografia/2022/03/03/1646335025622114315bf25_1646335025_3x2_md.jpg);
+}
+
+.banner2 {
+  background-image: url(https://img.olhardigital.com.br/wp-content/uploads/2022/02/the-batman-robert-pattinson.jpeg);
+}
+
+.banner3 {
+  background-image: url(https://www.tribunapr.com.br/wp-content/uploads/sites/56/2022/02/28121731/rev-1-TBM-11721r_High_Res_JPEG.jpeg);
+}
+
+.banner4 {
+  background-image: url(https://seuladogeek.com.br/wp-content/uploads/2022/03/batman-filme-2022.jpg);
+}
+
+.banner5 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1R6LVbW3LO_rDQ6SpdiWAdkUuMZXzNCuUCA&usqp=CAU);
+}
+
+.banner6 {
+  background-image: url(https://www.clubmotor.com.br/wp-content/uploads/2022/07/moto-filme-batman.jpg);
+}
+
+footer {
+
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  color: #fff;
+  font-family: 'Kdam Thmor Pró, sans-serif';
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.footer-nevigation {
+  display: none;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-nevigation {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .cards-content {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+
+  }
+}
